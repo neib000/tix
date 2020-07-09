@@ -1,7 +1,0 @@
-.udemyCarousel{
-    background-image:url('../img/cover.jpg') ;
-    height: 400px;
-    .udemyCarousel__form{
-        @include styleFormSearch($color-white-0,$color-white-0,$color-white-0);
-    }
-}
