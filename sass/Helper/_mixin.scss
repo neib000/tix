@@ -1,0 +1,12 @@
+@mixin responsive($screen) {
+    @if( map-has-key($map:$breakpoints, $key:$screen)){
+     //nếu tìm thấy tên màn hình,vd: screen: small
+     $value: map-get($map:$breakpoints , $key:$screen );
+     @media screen and (max-width:$value){
+         @content;
+     }
+    } 
+    @else{
+        @warn "không tìm thấy màn hình";
+    }
+ }
